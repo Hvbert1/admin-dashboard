@@ -14,10 +14,26 @@ body {
 
 .nav {
     display: grid;
+    gap: 20px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 10px;
+    gap: 20px;
+}
+
+.block {
+    display: grid;
+    gap: 20px;
 }
