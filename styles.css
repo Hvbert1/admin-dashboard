@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.sidebar {
+    display: grid;
+}
+
+.nav {
+    display: grid;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+}
