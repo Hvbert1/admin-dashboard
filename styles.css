@@ -6,7 +6,9 @@
 body {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 250px 4fr;
+    grid-template-columns: 300px 4fr;
+    grid-template-rows: 200px 5fr;
+    height:100vh;
 }
 
 .sidebar {
@@ -113,7 +115,7 @@ button {
     height: 200px;
 }
 
-/* .projects .heading {
+.projects .heading {
     grid-column: -1 / 1;
 }
 
@@ -138,4 +140,4 @@ button {
 .trending {
     display: grid;
     background-color: white;
-} */
+}
