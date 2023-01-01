@@ -139,6 +139,8 @@ button {
     color: black;
     height: min-content;
     border-radius: 10px;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
     border-left: .5rem solid #1992d4;
     gap: 1rem;
     padding: 1rem;
