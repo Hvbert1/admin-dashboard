@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -26,7 +27,9 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 55px);
     margin-left: 10px;
-    margin-top: 15px
+    margin-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
 } 
 
 .nav li, .setting li  {
@@ -58,6 +61,7 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    font-weight: bold;
 }
 
 .profile, .buttons {
@@ -74,11 +78,16 @@ body {
     max-width: 80%;
 }
 
-
 .profile-big {
     display: grid;
     grid-template-columns: repeat(2, min-content);
     gap: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-big p {
+    font-size: 15px;
 }
 
 .profile-pic-big {
@@ -92,6 +101,7 @@ button {
     padding: 15px 30px;
     text-align: center;
     border-radius: 25px;
+    font-weight: bold;
 }
 
 .main-content {
@@ -119,6 +129,8 @@ button {
 .projects .heading {
     grid-column: -1 / 1;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 .projects .card {
@@ -136,6 +148,8 @@ button {
 .card .title {
     margin: none;
     display: inline;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .card p, .title, .actions{
@@ -173,4 +187,13 @@ button {
 .trending .user {
     display: grid;
     grid-template-columns: 1fr 2fr;
+}
+
+.news-title {
+    font-weight: bold;
+}
+
+.announcements .heading, .trending .heading {
+    font-size: 1.2rem;
+    font-weight: bold;
 }
