@@ -96,7 +96,7 @@ button {
 
 .main-content {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 250px;
     grid-template-rows: 1fr 1fr;
     background-color: #e2e8f0;
     padding: 2rem;
@@ -112,9 +112,8 @@ button {
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    overflow: auto;
 }
 
 .projects .heading {
@@ -156,10 +155,22 @@ button {
     background-color: white;
 }
 
+.announcements .news {
+    border-bottom: 1px solid black;
+}
+
 .trending {
     border-radius: 10px;
     grid-row: 2 / 3;
     padding: 1rem;
     background-color: white;
     height: min-content;
+    display: grid;
+    grid-template-rows: min-content repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.trending .user {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
