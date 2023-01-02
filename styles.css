@@ -7,9 +7,9 @@
 body {
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: 300px 4fr;
-    grid-template-rows: 200px 5fr;
-    height:100vh;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 200px 1fr;
+    height: 100vh;
 }
 
 .sidebar {
@@ -74,7 +74,7 @@ body {
     border: none;
     border-radius: 20px;
     padding: 8px;
-    width: 40vw;;
+    width: 40vw;
     max-width: 80%;
 }
 
@@ -106,8 +106,8 @@ button {
 
 .main-content {
     display: grid;
-    grid-template-columns: 3fr 250px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr min-content;
     background-color: #e2e8f0;
     padding: 2rem;
     gap: 2rem;
