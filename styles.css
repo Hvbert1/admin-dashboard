@@ -15,7 +15,7 @@ body {
 .sidebar {
     grid-row: 1 / 3;
     color: white;
-    background-color: #1992d4;
+    background-color: #870058;
     font-size: 25px;
     display: flex;
     flex-direction: column;
@@ -57,6 +57,13 @@ body {
     list-style-type: none;
 }
 
+.user-profile {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
 .search, .profile, .buttons {
     display: flex;
     align-items: center;
@@ -90,12 +97,14 @@ body {
     font-size: 15px;
 }
 
-.profile-pic-big {
+.profile-big .user-profile {
     grid-row: 1 / 3;
+    height: 4rem;
+    width: 4rem;
 }
 
 button {
-    background-color: #1992d4;
+    background-color: #870058;
     border: none;
     color: white;
     padding: 15px 30px;
@@ -107,7 +116,7 @@ button {
 .main-content {
     display: grid;
     grid-template-columns: 1fr 250px;
-    grid-template-rows: 1fr min-content;
+    grid-template-rows: repeat(2, min-content);
     background-color: #e2e8f0;
     padding: 2rem;
     gap: 2rem;
@@ -134,16 +143,17 @@ button {
     font-weight: bold;
 }
 
-.projects .card {
+.card {
     background-color: white;
     color: black;
     height: min-content;
     border-radius: 10px;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
-    border-left: .5rem solid #1992d4;
+    border-left: .5rem solid #ff4f79;
     gap: 1rem;
     padding: 1rem;
+    box-shadow: 0 4px 10px -2px gray;
 }
 
 .card .title {
@@ -166,8 +176,8 @@ button {
     padding: 1rem;
     grid-row: 1 / 2;
     display: grid;
-    gap: 20px;
     background-color: white;
+    gap: 1rem;
 }
 
 .announcements .news {
