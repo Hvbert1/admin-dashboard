@@ -49,7 +49,7 @@ body {
 
 .head-items {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 300px;
     font-size: 20px;
 }
 
@@ -87,13 +87,16 @@ body {
 
 .profile-big {
     display: grid;
-    grid-template-columns: repeat(2, min-content);
+    grid-template-columns: min-content 300px;
+    grid-template-rows: repeat(2, min-content);
     gap: 10px;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: bolder;
+    margin-right: 20px;
 }
 
 .profile-big p {
+    display: inline;
     font-size: 15px;
 }
 
@@ -208,3 +211,4 @@ button {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
